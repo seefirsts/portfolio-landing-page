@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    background-color: black;
+  }
+.flex-container{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  height: 400px;
+  align-items: center;
+}
+.headitem{
+  width: 100px;
+  height: 200px;
+  background-color: #468b84;
+  color: #fff;
+  margin: 10px;
+  flex-grow: 5px;
+  flex-basis: 450px;
+  padding: 15px;
+
+}
+ul{
+  color: white;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+ul li a{
+  text-decoration: none;
+  padding: 0 20px;
+  color: white;
+  display: inline-block;
+}
+li a::after{
+  content: '';
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #c4c4f7;
+  transition: all.5s;
+}
+li a:hover::after{
+  width: 100%;
+}
+
+section{
+  display: flex;
+  height: calc(100vh - 100px);
+  align-items: center;
+  justify-content: center;
+}
+.kpicture{
+  max-width: 670px;
+  height: auto;
+  border-radius: 20%;
+}
+.content-left{
+  width: 30%;
+}
+section h1{
+  font-size: 81px;
+  color: #896f13;
+  text-transform: uppercase;
+}
+section h2{
+  font-size: 37px;
+  color: #FCA70C;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+section h3{
+  font-size: 27px;
+  color: #fff;
+  letter-spacing: 2px;
+
+}
+section p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  line-height: 31.5px;
+  margin: 30px 0;
+}
+.cta{
+  padding: 15px 30px;
+  background: #c4c4f7;
+  color: #fff;
+  outline: none;
+  font-weight: 700;
+  border-radius: 50px;
+}
+.name{
+  text-decoration: double;
+  color: white;
+  font-size: large;
+  text-align: left;
+}
+
+header{
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
